@@ -63,9 +63,12 @@ cd SDL2_mixer-2.0.4
 ./configure
 make -j$(nproc)
 make install
+cd "$files_root"
 
 # SDL2_gfx
 cd SDL2_gfx-1.0.4
 ./configure
 make -j$(nproc)
 make install
+
+echo "Done!"
